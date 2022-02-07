@@ -1,0 +1,28 @@
+/* ==== awal footer ==== */
+footer{
+    grid-area: footer;
+
+    background-color: var(--primary-light);
+    border-radius: 10px 10px 0 0;
+}
+
+/* === body footer === */
+    footer .body_footer{
+        margin: 38px 0 38px 0;
+        font-family: var(--bodytext-font-2);
+    }
+
+    /* === header footer === */
+        footer .body_footer .header_footer{
+            font-size: var(--text-1);
+            color: var(--text-light);
+            text-align: center;
+        }
+
+    /* === body footer === */
+        footer .body_footer .text_footer{
+            text-align: center;
+            font-weight: 200;
+            margin-top: 10px;
+        }
+/* ==== akhir footer ==== */

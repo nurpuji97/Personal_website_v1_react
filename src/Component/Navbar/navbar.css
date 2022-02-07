@@ -1,0 +1,190 @@
+@import url('../../Container/layout.css');
+
+/* ==== awal navigasi ==== */
+nav{
+    /* border: 1px solid violet; */
+
+    grid-area: nav;
+
+    display: grid;
+    padding: 23px 40px;
+    background-color: var(--primary-light);
+    border-radius: 0 0 10px 10px;
+
+    grid-template-rows: 1fr;
+    grid-template-columns: 150px 3fr 0;
+    grid-template-areas: 
+        'logo menu optional';
+    
+}
+
+/* === awal navigasi logo ==- */
+nav .nav__logo{
+    grid-area: logo;
+    
+    align-self: center;
+}
+
+/* === logo desktop === */
+nav .nav__logo .logo_desktop{
+    width: 115px;
+    height: 45px;
+    object-fit: cover;
+}
+
+/* === logo mobile === */
+nav .nav__logo .logo_Mobile{
+    display: none;
+}
+/* === akhir navigasi logo ==- */
+
+
+/* === awal navigasi menu === */
+nav .nav__menu{
+    grid-area: menu;
+
+    align-self: center;
+    justify-self: end;
+}
+
+nav .nav__menu ul{
+    display: flex;
+}
+
+nav .nav__menu ul li{
+    margin: 0 10px;   
+}
+
+nav .nav__menu ul li .nav__link{
+    /* border: 1px solid violet; */
+
+    padding: 17px 30px;
+    font-size: var(--text-1);
+    color: var(--text-light);
+    transition: .3s ease;
+    font-family: var(--bodytext-font-2);
+}
+
+nav .nav__menu ul li .nav__link:hover{
+    background-color: var(--secondary-light);
+    border-radius: 0 0 5px 5px;
+}
+/* === akhir navigasi menu === */
+
+/* === awal navigasi optional === */
+nav .nav__optional{
+    grid-area: optional;
+
+    align-self: center;
+    display: grid;
+    grid-template-columns: 1fr;    
+}
+
+/* === burger menu === */
+nav .nav__optional .Burger_menu{
+    justify-self: center;
+    display: none;
+}
+
+
+/* === akhir navigasi optional === */
+
+/* ==== akhir navigasi ==== */
+
+@media (max-width: 768px){
+
+    /* ==== awal Navbar ==== */
+    nav{
+        padding: 23px 20px;
+        grid-template-rows: 1fr;
+        grid-template-columns: 150px 2fr ;
+        grid-template-areas: 
+            'logo optional'
+            'menu menu';
+    }
+
+        /* === logo desktop === */
+        nav .nav__logo .logo_desktop{
+            display: none;
+        }
+    
+        /* === logo Mobile === */
+        nav .nav__logo .logo_Mobile{
+            display: block;
+            width: 40px;
+            height: 40px;
+            position: relative;
+            top: 14px;
+        }
+
+        /* === awal navigation Menu === */
+            nav .nav__menu{
+                grid-area: menu;
+            
+                align-self: center;
+                justify-self: center;
+                display: none;
+            }
+            
+            nav .nav__menu.active{
+                display: block;
+                transition: .5s ease-in-out;
+                width: 100%;
+
+                position: absolute;
+                top: 123px;
+                z-index: 10;
+                box-shadow: 0px 17px 14px 3px rgba(0,0,0,0.52);
+                -webkit-box-shadow: 0px 17px 14px 3px rgba(0,0,0,0.52);
+                -moz-box-shadow: 0px 17px 14px 3px rgba(0,0,0,0.52);
+                background-color: var(--primary-light);
+            }
+
+            nav .nav__menu ul{
+                display: flex;
+                flex-direction: column;
+            }
+            
+            nav .nav__menu ul li{
+                /* border: 1px solid violet;  */
+
+                margin-top: 40px;
+                margin-bottom: 30px;
+            }
+
+            nav .nav__menu ul li .nav__link{
+                /* border: 1px solid violet; */
+            
+                text-align: center;
+                padding: 20px 10rem;
+                transition: .5s ease;
+            }
+            
+            nav .nav__menu ul li .nav__link:hover{
+                background-color: var(--secondary-light);
+            }
+        /* === akhir navigation Menu === */
+
+        /* === awal navigaton optional === */
+            nav .nav__optional{
+                grid-area: optional;
+            }
+
+            nav .nav__optional .Burger_menu{
+                justify-self: end;
+
+
+                display: block;
+                cursor: pointer;
+            }
+        /* === akhir navigaton optional === */
+
+    /* ==== akhir Navbar ==== */
+
+    /* +++ Icon +++ */
+    ion-icon{
+        font-size: 20px;
+        color: var(--text-light);
+    }
+
+}

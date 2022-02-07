@@ -1,0 +1,48 @@
+@import url('../Assets/css/style.css');
+
+/* container */
+.container{
+    /* border: 1px solid violet; */
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 94px 1fr 131px;
+    grid-template-areas: 
+        'nav nav nav'
+        'main main main'
+        'footer footer footer';
+    row-gap: 28px;
+
+}
+
+/* ==== awal Main ==== */
+
+.container main{
+    grid-area: main;
+
+    width: 100%;
+}
+
+/* ==== akhir main Main ==== */
+
+
+@media (max-width: 768px){
+
+    /* ==== container ====*/
+    .container{
+        /* border: 1px solid violet; */
+    
+        grid-template-columns: 100%;
+        grid-template-rows: 130px 78% 1fr;
+        grid-template-areas: 
+            "nav"
+            "main"
+            "footer";
+    }
+
+}
+
+/* +++ icon +++ */
+ion-icon{
+    font-size: 50px;
+}
