@@ -7,16 +7,16 @@ export default function Footer(){
         <footer>
 
             {/* awal body footer */}
-            <div class="body_footer">
+            <div className="body_footer">
 
                 {/* awal header footer */}
-                <div class="header_footer">
+                <div className="header_footer">
                     Website Portopolio Pribadi
                 </div>
                 {/* akhir header footer */}
 
                 {/* awal body footer */}
-                <div class="text_footer">
+                <div className="text_footer">
                     Copyright @ 2021
                 </div>
                 {/* akhir body footer */}

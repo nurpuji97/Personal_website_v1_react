@@ -1,0 +1,61 @@
+       /* == card content ==*/
+       .card_content{
+        /* border: 1px solid violet; */
+
+        width: 375px;
+        border-radius: 10px;
+        padding: 30px 20px;
+        background-color: var(--primary-light);
+    }
+
+    /* == profile card == */
+    .card_content .profile-card{
+        display: flex;
+        margin-bottom: 15px;
+    }
+
+    /* == image profile == */
+    .card_content .profile-card .image_profile-card{
+        width: 82px;
+        height: 82px;
+        margin-right: 10px;
+    }
+
+    /* == image profile img == */
+    .card_content .profile-card .image_profile-card img{
+        width: 82px;
+        height: 82px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    /* == title profile == */
+    .card_content .profile-card .title_profile-card{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* == nama profile == */
+    .card_content .profile-card .title_profile-card .nama_profile{
+        font-family: var(--bodytext-font-2);
+        font-size: var(--text-1);
+        color: var(--text-light);
+        font-weight: 700;
+        margin: 5px auto;
+    }
+
+    /* == profesi == */
+    .card_content .profile-card .title_profile-card .profesi{
+        font-family: var(--bodytext-font-2);
+        font-size: 15px;
+        font-weight: 300;
+    }
+
+    /* body card */
+    .card_content .body-card{
+        font-family: var(--bodytext-font-2);
+        font-size: var(--sub-text);
+        line-height: 18px;
+        font-style: italic;
+        margin-top: 20px;
+    }

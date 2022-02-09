@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import './navbar.css';
 import Logo_Desktop from '../../Assets/img/Pujie.png';
@@ -31,13 +32,13 @@ export default function Navbar(){
             <div className={`nav__menu ${isActive ? "" : "active"}`}>
                 <ul>
                     <li>
-                        <div className="nav__link">Home</div>
+                        <Link to="/" className="nav__link">Home</Link>
                     </li>
                     <li>
-                        <div className="nav__link">Project</div>
+                        <Link to="/Project" className="nav__link">Project</Link>
                     </li>
                     <li>
-                        <div className="nav__link">About</div>
+                        <Link to="/About" className="nav__link">About</Link>
                     </li>
                 </ul>
             </div>
@@ -53,6 +54,7 @@ export default function Navbar(){
             </div>
 
         </nav>
+
 
     );
 }
