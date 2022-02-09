@@ -7,8 +7,10 @@ import Logo_Mobile from '../../Assets/img/P.svg';
 
 export default function Navbar(){
 
+    // Is Active Toggle
     const [isActive, setActive] = useState("false");
 
+    // function Toggle Buttton
     const handleToggle = () => {
         setActive(!isActive);
     };

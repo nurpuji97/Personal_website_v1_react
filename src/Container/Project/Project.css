@@ -1,0 +1,44 @@
+@import url('../../Container/layout.css');
+
+.container_project{
+    position: relative;
+    height: 1000px;
+    width: 100%;
+    background-color: var(--primary-light);
+    border-radius: 10px;
+    padding: 20px 40px;
+    overflow: auto;
+}
+
+.container_project h1.judul_project{
+    position: sticky;
+    font-family: var(--header-font-1);
+    font-size: var(--size-2);
+    line-height: 18px;
+    margin-bottom: 60px;
+    padding-top: 25px;
+    padding-left: 20px;
+}
+
+.container_project .container_card{
+    margin-top: 35px;
+    margin-bottom: 35px;
+
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+/* @media (max-width: 660px){
+    .container_project{
+        margin-bottom: 30%;
+    }
+} */
+
+/* @media (max-width: 500px){
+    .container_project{
+        margin-bottom: 30%;
+    }
+} */

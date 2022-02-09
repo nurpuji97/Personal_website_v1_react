@@ -1,0 +1,64 @@
+@import url('../../Assets/css/style.css');
+
+.card{
+    background: var(--Text-dark);
+    border-radius: 5px;
+    width: 280px;
+    height: 340px;
+    margin-bottom: 40px;
+
+    box-shadow: 14px 16px 28px -8px rgba(0,0,0,0.7);
+    -webkit-box-shadow: 14px 16px 28px -8px rgba(0,0,0,0.7);
+    -moz-box-shadow: 14px 16px 28px -8px rgba(0,0,0,0.7);
+
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+}
+
+.card .card_photo{
+    width: 239px;
+    height: 165px;
+    margin: 20px;
+    border-radius: 2.5px;
+}
+
+.card .card_photo img{
+    width: 239px;
+    height: 165px;
+    object-fit: cover;
+}
+
+.card .card_detail{
+    text-align: center;
+}
+
+.card .card_detail .nama_detail{
+    font-family: var(--bodytext-font-2);
+    font-size: var(--text-1);
+}
+
+.card .card_detail .btn_detail{
+    text-decoration: none;
+    border: none;
+    margin-top: 25px;
+    padding: 10px 40px;
+    font-family: var(--bodytext-font-2);
+    font-size: 14px;
+    border-radius: 2.5px;
+    background-color: var(--secondary-light);
+    color: var(--text-light);
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 2px 9px 18px -4px rgba(0,0,0,0.77);
+    -webkit-box-shadow: 2px 9px 18px -4px rgba(0,0,0,0.77);
+    -moz-box-shadow: 2px 9px 18px -4px rgba(0,0,0,0.77);
+    transition: all .5s ease;
+}
+
+.card .card_detail .btn_detail:hover{
+    background-color: var(--secondary-dark);
+    font-weight: bold;
+    text-decoration: underline;
+    padding: 12px 42px;
+}
