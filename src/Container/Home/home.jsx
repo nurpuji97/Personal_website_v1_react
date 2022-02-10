@@ -1,5 +1,6 @@
 import React from "react";
 import './home.css';
+import { useEffect } from "react";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -14,6 +15,10 @@ import { Pagination, Navigation } from "swiper";
 import CardTestimoni from "../../Component/CardTestimoni/cardTestimoni";
 
 export default function Home() {
+
+    useEffect(function () {
+        document.title = 'Home';
+    }, []);
 
     return (
         <div>

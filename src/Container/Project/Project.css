@@ -11,13 +11,11 @@
 }
 
 .container_project h1.judul_project{
-    position: sticky;
     font-family: var(--header-font-1);
     font-size: var(--size-2);
     line-height: 18px;
     margin-bottom: 60px;
     padding-top: 25px;
-    padding-left: 20px;
 }
 
 .container_project .container_card{

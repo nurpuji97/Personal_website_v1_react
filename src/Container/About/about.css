@@ -1,0 +1,280 @@
+@import url('../../Container/layout.css');
+
+/* === awal About me === */
+main .background_aboutme{
+    background-color: var(--primary-light);
+    border-radius: 10px;
+}
+
+    /* = judul about = */
+    main .background_aboutme .judul_about{
+        font-family: var(--header-font-1);
+        font-size: var(--size-2);
+        color: var(--text-light);
+        margin-left: 40px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    /* == awal detail about == */
+    main .background_aboutme .detail_about{
+        margin: 0 40px;
+        display: flex;
+        padding-bottom: 60px;
+    }
+
+    /* = image profile = */
+    main .background_aboutme .detail_about .image_profile{
+        width: 363px;
+        height: 363px;
+        margin-right: 20px;
+    }
+
+    /* img */
+    main .background_aboutme .detail_about .image_profile img{
+        object-fit: cover;
+        width: 363px;
+        height: 363px;
+        object-position: top;
+        border-radius: 5px;
+    }
+
+        /* == awal text about == */
+        main .background_aboutme .detail_about .text_about{
+            margin: 10px 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* = awal text about name = */
+        main .background_aboutme .detail_about .text_about .text_about_name{
+            margin-bottom: 25px;
+        }
+
+            /* name */
+            main .background_aboutme .detail_about .text_about .text_about_name .name{
+                font-family: var(--bodytext-font-2);
+                font-size: var(--text-1);
+                color: var(--text-light);
+                font-weight: 700;
+                margin-bottom: 5px;
+            }
+
+            /* Profesi */
+            main .background_aboutme .detail_about .text_about .text_about_name .profesi{
+                font-family: var(--bodytext-font-2);
+                font-size: var(--sub-text);
+                color: var(--text-light);
+                font-weight: 300;
+            }
+        /* = awal text about name = */
+
+        /* = text about pragraf = */
+        main .background_aboutme .detail_about .text_about .text_about_paragraf{
+            width: 100%;
+        }
+
+        /* paragraf */
+        main .background_aboutme .detail_about .text_about .text_about_paragraf .paragraf{
+            margin-bottom: 15px;
+            line-height: 29px;
+        }
+        /* == alhir text about == */
+
+    /* == akhir detail about == */
+
+/* === akhir About me === */
+
+/* === awal background contact & kritik === */
+main .background_kontak_kritik{
+    display: flex;
+    margin-top: 30px;
+}
+
+    /* == awal section Contact == */
+    main .background_kontak_kritik .section_contact{
+        width: 480px;
+        height: 240px;
+        margin-right: 40px;
+        background-color: var(--primary-light);
+        border-radius: 10px;
+        padding-left: 40px;
+        padding-top: 20px;
+    }
+
+    /* judul cntact */
+    main .background_kontak_kritik .section_contact .judul_contact{
+        font-family: var(--header-font-1);
+        font-size: var(--size-2);
+        margin-bottom: 20px;
+        color: var(--text-light);
+    }
+
+    /*  list detail contact  */
+    main .background_kontak_kritik .section_contact .list_detail_contact{
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    /* list detail contact span */
+    main .background_kontak_kritik .section_contact .list_detail_contact span{
+        margin-top: 15px;
+        margin-left: 10px;
+    }
+    /* == akhir section Contact == */
+
+    /* == awal section kritik == */
+    main .background_kontak_kritik .section_kritik{
+        background-color: var(--primary-light);
+        border-radius: 10px;
+        padding: 20px 40px 20px 40px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* judul kritik */
+    main .background_kontak_kritik .section_kritik .judul_kritik{
+        font-family: var(--header-font-1);
+        font-size: var(--size-2);
+        margin-bottom: 30px;
+        color: var(--text-light);
+    }
+    
+    /* awal gruop input */
+    main .background_kontak_kritik .section_kritik .group_input{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    /* label */
+    main .background_kontak_kritik .section_kritik .group_input label{
+        color: var(--text-light);
+        font-family: var(--bodytext-font-2);
+        font-size: var(--text-1);
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    /* input */
+    main .background_kontak_kritik .section_kritik .group_input input[type=text]{
+        font-family: var(--bodytext-font-2);
+        font-size: var(--text-1);
+        color: var(--text-light);
+        padding: 15px;
+        border-radius: 5px;
+        border: none;
+        background-color: #FEE2E2;
+    }
+
+    /* textarea */
+    main .background_kontak_kritik .section_kritik .group_input textarea{
+        font-family: var(--bodytext-font-2);
+        font-size: var(--text-1);
+        color: var(--text-light);
+        padding: 15px;
+        border-radius: 5px;
+        border: none;
+        background-color: #FEE2E2;
+    }
+
+    /* button */
+    main .background_kontak_kritik .section_kritik .btn_simpan{
+        text-decoration: none;
+        border: none;
+        padding: 10px 45px;
+        border-radius: 5px;
+        font-family: var(--bodytext-font-2);
+        font-size: var(--text-1);
+        color: var(--text-light);
+        background-color: var(--secondary-light);
+        font-weight: 400;
+        transition: .5s ease;
+        position: relative;
+        margin-bottom: 20px;
+
+        box-shadow: 3px 19px 39px -5px rgba(0,0,0,0.54);
+        -webkit-box-shadow: 3px 19px 39px -5px rgba(0,0,0,0.54);
+        -moz-box-shadow: 3px 19px 39px -5px rgba(0,0,0,0.54);
+    }
+
+    main .background_kontak_kritik .section_kritik .btn_simpan:hover{
+        font-weight: 700;
+        padding: 11px 46px;
+        cursor: pointer;
+    }
+
+    /* == akhir section kritik == */
+
+/* === akhir background contact & kritik === */
+
+@media (max-width: 768px){
+
+    /* detail about */
+    main .background_aboutme .detail_about{
+        flex-direction: column;
+    }
+
+    /* image profile 768px */
+    main .background_aboutme .detail_about .image_profile{
+        width: 188px;
+        height: 188px;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    
+    /* img 768 */
+    main .background_aboutme .detail_about .image_profile img{
+        max-width: 188px;
+        max-height: 188px;
+    }
+
+    /* judul about */
+    main .background_aboutme .judul_about{
+        margin-left: 20px;
+    }
+    
+    /* detail about */
+    main .background_aboutme .detail_about{
+        margin: 0 20px;
+    }
+
+    /* background kritik */
+    main .background_kontak_kritik{
+        flex-direction: column;
+    }
+
+    /* section kritik */
+    main .background_kontak_kritik .section_kritik{
+      margin-bottom: 200px;
+    }
+
+}
+
+@media (max-width: 980px){
+
+    /* background kritik */
+    main .background_kontak_kritik{
+        flex-direction: column;
+    }
+
+    /* section contact */
+    main .background_kontak_kritik .section_contact{
+        width: 100%;
+        margin-bottom: 40px;
+        height: 300px;
+        text-align: center;
+
+    }
+
+    /* list detail contact */
+    main .background_kontak_kritik .section_contact .list_detail_contact{
+        flex-direction: column;
+    }
+
+    /* icon */
+    main .background_kontak_kritik .section_contact .list_detail_contact ion-icon{
+        margin: 0 auto;
+    }
+
+}

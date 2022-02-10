@@ -1,8 +1,14 @@
 import React from "react";
 import CardProject from "../../Component/CardProject/cardProject";
+import { useEffect } from "react";
 import './Project.css';
 
 export default function Project(){
+
+    useEffect(function () {
+        document.title = 'Project';
+    }, []);
+
     return (
 
         // <!-- awal container project -->
